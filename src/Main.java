@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
-    static int[][] matrix = {
+    static int[][] score = {
             {1, 3, 6, 9, 2, 7},
             {3, 8, 5, 2, 1, 1},
             {3, 3, 6, 8, 9, 1},
@@ -10,7 +10,7 @@ public class Main {
     };
 
     public static void main(String[] args) {
-        getAllRepetitiveValuesInAllRows(matrix, getFirstRow(matrix), getCounts(matrix));
+        getAllRepetitiveValuesInAllRows(score, getFirstRow(score), getCounts(score));
     }
 
     private static int[][] getCounts(int[][] array2D) {
