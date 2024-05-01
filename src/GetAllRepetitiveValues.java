@@ -35,6 +35,16 @@ public class GetAllRepetitiveValues {
     }
 
     public static void getAllRepetitiveValues(int[][] array2D, int[] firstRow, int[][] counts) {
+
+
+        for (int i = 0; i < array2D.length; i++) {
+            for (int j = 0; j < array2D[0].length; j++) {
+                System.out.print(array2D[i][j] + " " );
+            }
+            System.out.println();
+        }
+
+
         for (int row = 1; row < array2D.length; row++) {
             for (int cc = 0; cc < array2D[0].length; cc++) {
                 for (int i = 0; i < firstRow.length; i++) {
